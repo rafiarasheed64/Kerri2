@@ -1,0 +1,1165 @@
+<html>
+    <head>
+        <title>kerri</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: Montserrat, sans-seri;
+        }
+            .first{
+                height: 100vh;
+                width: 100%;
+                /* background-color: rgba(0, 0, 0, 0.199); */
+                background-image: url(./kerri/header-bg.jpg);
+                background-position: center;
+                background-size: cover;
+                padding: 1px;
+                position: relative;
+            }
+            
+            .first_overlay{
+                height: 100vh;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.452);
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        #nav_bar{
+            height: 80px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.397);
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1;
+
+        }
+        #logo{
+            height: 30px;
+            width: 80px;
+            margin-top: 30px;
+            margin-left: 80px;
+            display: inline-block;
+        }
+        #image1{
+            height: 30px;
+            width: 80px;
+            cursor: pointer;
+        }
+        #list{
+           height:30px;
+           width: 550px;
+           /* border: 1px solid; */
+           display: inline-block;
+           margin-left: 550px;
+        }
+        #name{
+            color: white;
+            display: inline-block;
+            margin-left: 20px;
+            cursor: pointer;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-delay: 0.2s;
+            transition-timing-function: linear;
+        }
+        #name:hover{
+            color: rgb(214,92,115);
+        }
+    #heading{
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 130px;
+        }
+     .textadjust{
+        height: 70px;
+        width: 30%;
+        margin: auto;
+        margin-top: 70px;
+        /* border: 1px solid #000; */
+        position: relative;
+        overflow: hidden;
+        animation-name: div_close;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+       
+     }   
+    .heading1{
+        color: white;
+        white-space: nowrap;
+        font-size: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;  
+    }
+    @keyframes div_close {
+      0%{
+        width: 6%;
+      }
+      11%{
+        width: 33%;
+      }
+      22%{
+        width: 33%;
+
+      } 
+      33%{
+        width: 6%;
+      }
+      44%{
+        width: 39%;
+      }
+      55%{
+        width: 39%;
+      }
+      66%{
+        width: 6%;
+      }
+      77%{
+        width: 23%;
+      }
+      88%{
+        width: 23%;
+      }
+      100%{
+        width: 6%;
+      } 
+    }
+    .hide{
+        opacity: 1;
+    }
+    .text001{
+        animation-name: text001;
+        animation-duration: 9s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    @keyframes text001 {
+        0%{
+            opacity: 1;
+        }
+        33%{
+            opacity: 1;
+        }
+        34%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+        
+    }
+    .text002{
+        animation-name: text002;
+        animation-duration: 9s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    @keyframes text002 {
+        0%{
+            opacity: 0;
+        }
+        33%{
+            opacity: 0;
+        }
+        34%{
+            opacity: 1;
+        }
+        66%{
+            opacity: 1;
+        }
+        67%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+
+    .text003{
+        animation-name: text003;
+        animation-duration: 9s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+
+    }
+    @keyframes text003 {
+        0%{
+            opacity: 0;
+        }
+        66%{
+            opacity: 0;
+        }
+        67%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    #heading2{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 30px;
+        
+        
+    }
+    #text1{
+        color: white;
+        border: 2px solid white;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.075);
+        height: 50px;
+        width: 150px;
+        margin-left: 600px;
+        margin-top: 50px;
+        cursor: pointer;
+        font-family: Nunito, sans-seri;
+    }
+    #text1:hover{
+        background-color: white;
+        color: rgb(0, 0, 0);
+    }
+    #blck{
+        height: 45px;
+        width: 25px;
+        border-radius: 15px;
+        border: 3px solid white;
+        margin: auto;
+        margin-top: 70px;
+        animation-name: box_line;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+
+    }
+    @keyframes box_line {
+        0%{
+            margin-top: 50px;
+
+        }
+        20%{
+            margin-top: 20px;
+        }
+        50%{
+            margin-top: 50px;
+        }
+        75%{
+            margin-top: 30px;
+
+        }
+        100%{
+            margin-top: 50px;
+        }
+        
+    }
+    #line2{
+        height: 12px;
+        width: 3px;
+        background-color: white;
+        margin: auto;
+        margin-top: 20px;
+
+    }
+    #second{
+        height: 600px;
+        width: 100%;
+        background-color: rgb(255,255,255);
+        padding: 1px; }
+        
+    #child1{
+        height: 400px;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 100px;
+        /* border: 1px solid; */
+    } 
+    #box1{
+        height: 400px;
+        width: 40%;
+        border: 1px solid rgb(222,226,230);
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 30px;
+    } 
+    #image2{
+        height: 380px;
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 8px;
+    }
+    #box2{
+        height: 400px;
+        width: 50%;
+        /* border: 1px solid; */
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 40px;
+    }
+    #heading3{
+        /* font-family: Montserrat, sans-serif; */
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        color: rgb(33, 37, 41);
+    }  
+    #heading4{
+        font-size: 24px;
+        margin-top: 25px;
+        font-weight: 500 ;
+        line-height: 29px;
+        color: rgb(33, 37, 41);
+    }
+    #color{
+        color:  rgb(230, 95, 120);
+    }
+    #text2{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color:  rgb(108, 117, 125);
+        margin-top: 15px;
+        font-family: Nunito, sans-serif;
+    }
+    #box3{
+        height: 50px;
+        width: 250px;
+        /* border: 1px solid; */
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #circle1{
+        height: 50px;
+        width: 50px;
+        border: 2px solid rgb(212,212,212);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-delay: 0.1s;
+        transition-timing-function: linear;
+    }
+    #circle1:hover{
+        border: 2px solid rgb(230, 95, 120);
+        color: rgb(230, 95, 120);
+        cursor: pointer;
+    }
+    .icons{
+        font-size: 20px;
+    }
+    #third{
+        height: 150vh;
+        width: 100%;
+        background-color: rgb(248,249,250);
+        padding: 1px;
+    }
+    #heading5{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        text-align: center;
+        margin-top: 60px;
+        font-family: Montserrat, sans-serif;
+    }
+    #text3{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color:  rgb(108, 117, 125);
+        margin-top: 25px;
+        font-family: Nunito, sans-serif;
+        text-align: center;  
+    }
+    #box4,#box5{
+        height: 300px;
+        width: 350px;
+        border: 1px solid rgb(232,232,232);
+        margin-top: 50px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 120px;
+        transition-property: all;
+        transition-duration: 0.5;
+        transition-timing-function: linear;
+        transition-delay: 0.2s;
+
+    }
+    #box5{
+        margin-left: 40px;
+    }
+    .clr{
+        color:  rgb(230,95,120);
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .heading6{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        margin-top: 30px;
+        color:  rgb(33, 37, 41);
+        font-family: Montserrat, sans-serif;
+    }
+    .line{
+        height: 2px;
+        width: 40px;
+        background-color: rgb(230,95,120);
+        margin: auto;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+    
+    }
+    #box5:hover .line{
+        width: 50px;
+    }
+    #box4:hover .line{
+        width: 50px;
+    }
+    .text4{
+        font-family: Nunito, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: rgb(108, 117, 125);
+        margin-top: 30px;
+        text-align: center;
+    }
+    #fourth{
+        height: 30vh;
+        width: 100%;
+    }
+    #box6{
+        height: 50px;
+        width: 120px;
+        font-family: Nunito, sans-serif;
+        cursor: pointer;
+        border: 2px solid rgb(230,95,120);
+        background-color: rgb(230,95,120);
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 47%;
+        margin-top: 30px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    #box6:hover{
+        background-color: rgb(231, 77, 105);
+        
+        
+    }
+    #fifth{
+        height: 100vh;
+        width: 100%;
+        background-color: aliceblue;
+        padding: 1px;
+        
+    }
+    #slider_div{
+        height: 370px;
+        width: 60%;
+        /* border: 1px solid #000; */
+        margin: auto;
+        margin-top: 30;
+        overflow: hidden;
+    }
+    #slider{
+        height: 100%;
+        width: 300%;
+        /* border: 1px solid #000; */
+        animation-name: slider;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes slider {
+       0%{
+        margin-left: 0;
+       }
+       20%{
+        margin-left: 0;
+       }
+       40%{
+        margin-left: -100%;
+       }
+       60%{
+        margin-left: -100%;
+       } 
+       80%{
+        margin-left: -200%;
+       }
+       100%{
+        margin-left: -200%;
+       }
+    }
+    #slide{
+        height: 100%;
+        width: 33.21%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        padding: 1px;
+
+    }
+    #block5{
+        height: 40px;
+        width: 100px;
+        /* border: 1px solid #000; */
+        margin-left: 49%;
+        margin-top: 40px;
+    }
+    .clr2{
+        font-size: 40px;
+        color: rgb(231,99,124);
+    }
+    #circle2{
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        margin-left: 48%;
+        margin-top: 30px;
+        border: 1px solid rgb(223,227,231);
+
+    }
+    .image3{
+        height: 110px;
+        width: 110px;
+        border-radius: 50%;
+        margin-top: 5px;
+    }
+    #sixth{
+        height: 150vh;
+        width: 100%;
+
+    }
+    #list1{
+        height: 50px;
+        width: 600px;
+        /* border: 1px solid; */
+        margin-left: 27%;
+        margin-top: 40px;
+        /* display: flex;
+        justify-content: space-between; */
+    }
+    #box7{
+        display: flex;
+
+    }
+    #block{
+        /* height: 30px;
+        width: 100px; */
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-left: 20px;
+        list-style: none;
+        font-family: Nunito, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        color: rgb(46, 46, 46);
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-timing-function: linear;
+        cursor: pointer;
+
+
+    }
+    #block:hover{
+        background-color: rgb(230,95,120);
+        color: white;
+    }
+    #box8,#box9{
+        height: 270px;
+        width: 350px;
+        margin-top: 50px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 70px;
+        position: relative;
+    
+
+    }
+
+
+    .adjust{
+        height: 300px;
+        width: 350px;
+    }
+    .div_overlay{
+        height: 300px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.697);
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-timing-function: linear;
+
+    }
+   
+    #box8:hover .div_overlay{
+        opacity: 1;
+    }
+    #box9:hover .div_overlay{
+        opacity: 1;
+    }
+
+    .contentDiv{
+        height: 70px;
+        width: 150px;
+        /* border: 1px solid white; */
+        margin: auto;
+        margin-top: 220px;
+        opacity: 0;
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-timing-function: linear;
+        text-align: center;
+    }
+    #box8:hover .contentDiv{
+        margin-top: 120px;
+        opacity: 1;
+    }
+    #box9:hover .contentDiv{
+        margin-top: 120px;
+        opacity: 1;
+    }
+    .text9{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.6);
+        font-family: Nunito, sans-serif;
+    }
+    .text10{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.6);
+        font-family: Nunito, sans-serif;
+    }
+    #seventh{
+        height: 130vh;
+        width: 100%;
+        padding: 1px;
+        background-color: rgb(248,249,250);
+    }
+    #block1{
+        height: 80vh;
+        width: 27%;
+        background-color: white;
+        margin-left: 60px;
+        margin-top: 40px;
+        display: inline-block;
+        vertical-align: top;
+        border-radius: 5px;
+    }
+    .image4{
+        width: 95%;
+        height: 40%;
+        margin-left: 2.5%;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+    #heading7{
+        font-size: 24px;
+        margin-top: 25px;
+        margin-left: 30px;
+        font-weight: 500 ;
+        line-height: 29px;
+        color: rgb(33, 37, 41);
+        cursor: pointer;  
+    }
+    .text5{
+        font-family: Nunito, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: rgb(108, 117, 125);
+        margin-top: 20px;
+        margin-left: 30px;  
+    }
+    #color1{
+        color:  rgb(230, 95, 120);
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .text6{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        color:  rgb(108, 117, 125);
+        font-family: Nunito, sans-serif;
+        margin-left: 30px;
+        margin-top: 20px;
+        cursor: pointer;
+
+    }
+    #eighth{
+        height: 130vh;
+        width: 100%;    
+        padding: 1px;
+    }
+    #box12{
+        height: 180px;
+        width: 230px;
+        /* border: 1px solid; */
+        margin-left: 160px;
+        margin-top: 50px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .heading8{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        color: rgb(33, 37, 41);
+        text-align: center;
+        margin-top: 20px;
+    }
+    #text7{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        font-family:  Nunito, sans-serif;
+        color: rgb(108, 117, 125);
+    }
+    #box10{
+        height: 50px;
+        width: 74%;
+        /* border: 1px solid #000; */
+        margin-left: 14%;
+        display: inline-block;
+        display: flex;
+        justify-content: space-between;
+    }
+    #block2{
+        height: 50px;
+        width: 47%;
+        border: 2px solid rgb(224,224,224);
+        font-size: 18px;
+        padding-left: 10px;
+        padding-top: 5px;
+        border-radius: 5px;
+        outline-color: rgb(228,147,162);
+        display: inline-block;
+    }
+    #block3{
+        height: 50px;
+        width: 74%;
+        border: 2px solid rgb(224,224,224);
+        font-size: 18px;
+        padding-left: 10px;
+        padding-top: 5px;
+        border-radius: 5px; 
+        margin-top: 30px;
+        margin-left: 14%; 
+        outline-color: rgb(228,147,162);
+    }
+    #block4{
+        height: 120px;
+        width: 74%;
+        border: 2px solid rgb(224,224,224);
+        font-size: 18px;
+        padding-left: 10px;
+        padding-top: 5px;
+        border-radius: 5px; 
+        margin-top: 30px;
+        margin-left: 14%; 
+        outline-color: rgb(228,147,162);
+    }
+    #box11{
+        height: 50px;
+        width: 150px;
+        font-family: Nunito, sans-serif;
+        cursor: pointer;
+        border: 2px solid rgb(230,95,120);
+        background-color: rgb(230,95,120);
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 77%;
+        margin-top: 30px;
+        font-size: 15px; 
+    }
+    #box11:hover{
+        background-color: rgba(230, 95, 120, 0.781)
+        ;
+    }
+    #nineth{
+        height: 40vh;
+        width: 100%;
+        background-color: rgb(33,33,33);
+        padding: 1px;
+    }
+    #box13{
+        height: 50px;
+        width: 250px;
+        margin-top: 10px;
+        margin-left: 40%;
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #circle3{
+        height: 50px;
+        width: 50px;
+        background-color:rgb(49,49,49);
+        /* border: 2px solid rgb(212,212,212); */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(171,171,171);
+        cursor: pointer;
+    }
+    #circle3:hover{
+        color: rgba(230, 95, 120, 0.781) ;
+    }
+    .icons1{
+        background-color:rgb(49,49,49);
+        font-size: 20px;
+    }
+    #text8{
+        color: rgb(171,171,171);
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;   
+    }
+
+
+        </style>
+    
+    <body>
+        <section class="first">
+
+            <div class="first_overlay">
+
+                <div id="nav_bar">
+                  <div id="logo">
+                    <img id="image1" src="./kerri/logo.png" alt="">
+                    </div>
+                    <div id="list">
+                        <ul >
+                            <li id="name">Home</li>
+                            <li id="name">About</li>
+                            <li id="name">Services</li>
+                            <li id="name">Clients</li>
+                            <li id="name">Portfolio</li>
+                            <li id="name">Blog</li>
+                            <li id="name">Contact</li>
+    
+                        </ul>
+                    </div>
+                </div>
+                <h3 id="heading">Welcome</h3>
+                <div class="textadjust" >
+                    <h1 class="heading1">I'm <span class="hide text001">A Photographer</span></h1>
+                    <h1 class="heading1">I'm <span class="hide text002">A Graphic Designer</span></h1>
+                    <h1 class="heading1">I'm <span class="hide text003">Kerri deo</span></h1>
+    
+                </div>
+                <p id="heading2">It is a long established fact that a reader will be of a page when <br> established fact looking at its layout.</p>
+                <button id="text1">DOWNLOAD CV</button>
+                <div id="blck">
+                    <div id="line2"></div>
+                </div>
+
+            </div>
+
+        </section>
+        <section id="second">
+            <div id="child1">
+                <div id="box1">
+                    <img id="image2" src="./kerri/about.jpg" alt="">
+                </div>
+                <div id="box2">
+                    <h1 id="heading3">About Me</h1>
+                    <h3 id="heading4">Hello! <span id="color">I'M Kerri Deo.</span></h3>
+                    <p id="text2">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout.</p>
+                    <p id="text2">The point of using Lorem Ipsum is that it has a more-or-less normal <br> distribution of letters, as opposed to using 'Content here, content here', <br> making it look like readable English.</p>
+                    <p id="text2">There are many variations of passages of Lorem Ipsum available, but the <br> majority have suffered alteration in some form, by injected humour, or <br> randomised words which don't look even slightly believable.</p>
+                    <div id="box3">
+                        <div id="circle1" >
+                            <i class="bi bi-globe icons"></i>
+                        </div>
+                        <div id="circle1" >
+                            <i class="fa-brands fa-facebook-f icons"></i>
+                        </div>
+                        <div id="circle1" >
+                            <i class="fa-brands fa-linkedin-in icons"></i>
+                        </div>
+                        <div id="circle1" >
+                            <i class="bi bi-twitter icons"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="third">
+            <h1 id="heading5">Our Services</h1>
+            <p id="text3">It is a long established fact that a reader will be of a page when <br> established fact looking at its layout.</p>
+            <div id="box4">
+                <i class="bi bi-graph-up-arrow clr"></i>
+                <h2 class="heading6">Graphic Design</h2>
+                <div class="line"></div>
+                <p class="text4">There are many variations of passages of <br> but the majority have suffered alteration in <br> some form.</p>
+
+            </div>
+            <div id="box5">
+                <i class="bi bi-cup-hot clr"></i>
+                <h2 class="heading6">Unlimited Color</h2>
+                <div class="line"></div>
+                <p class="text4">There are many variations of passages of <br> but the majority have suffered alteration in <br> some form.</p>
+
+            </div>
+            <div id="box5">
+                <i class="bi bi-cloud-upload clr"></i>
+                <h2 class="heading6">Media Marketing</h2>
+                <div class="line"></div>
+                <p class="text4">There are many variations of passages of <br> but the majority have suffered alteration in <br> some form.</p>
+
+            </div>
+            <div id="box4">
+                <i class="bi bi-layers clr"></i>
+                <h2 class="heading6">Unlimited Wifi</h2>
+                <div class="line"></div>
+                <p class="text4">There are many variations of passages of <br> but the majority have suffered alteration in <br> some form.</p>
+
+
+            </div>
+            <div id="box5">
+                <i class="bi bi-0-square-fill clr"></i>
+                <h2 class="heading6">Responsive Design</h2>
+                <div class="line"></div>
+                <p class="text4">There are many variations of passages of <br> but the majority have suffered alteration in <br> some form.</p>
+
+            </div>
+            <div id="box5">
+                <i class="fa-solid fa-pen-to-square clr"></i>
+                <h2 class="heading6">Easy to customize</h2>
+                <div class="line"></div>
+                <p class="text4">There are many variations of passages of <br> but the majority have suffered alteration in <br> some form.</p>
+
+            </div>
+
+        </section>
+        <section id="fourth">
+            <h1 id="heading5">I Am Available For Freelancer</h1>
+        <button id="box6">HIRE ME!</button>
+        </section>
+        <section id="fifth">
+            <h1 id="heading5">Our Client</h1>
+            <p class="text4">It is a long established fact that a reader will be of a page when  <br> established fact looking at its layout.</p>
+           <div id="slider_div">
+            <div id="slider">
+
+               <div id="slide">
+
+                   <div id="block5">
+                       <i class="bi bi-droplet clr2"></i>
+                       <i class="bi bi-droplet clr2"></i>
+                    </div>
+                    <div id="circle2">
+                        <img class="image3" src="./kerri/testi-1.jpg" alt="">
+                    </div>
+                    <p class="text4">"The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, <br> as opposed to using 'Content here."</p>
+                </div> 
+                <div id="slide">
+
+                    <div id="block5">
+                        <i class="bi bi-droplet clr2"></i>
+                        <i class="bi bi-droplet clr2"></i>
+                     </div>
+                     <div id="circle2">
+                         <img class="image3" src="./kerri/testi-2.jpg" alt="">
+                     </div>
+                     <p class="text4">"The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, <br> as opposed to using 'Content here."</p>
+                 </div> 
+                 <div id="slide">
+
+                    <div id="block5">
+                        <i class="bi bi-droplet clr2"></i>
+                        <i class="bi bi-droplet clr2"></i>
+                     </div>
+                     <div id="circle2">
+                         <img class="image3" src="./kerri/testi-3.jpg" alt="">
+                     </div>
+                     <p class="text4">"The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, <br> as opposed to using 'Content here."</p>
+                 </div> 
+            </div>
+            </div>
+        </section>
+        <section id="sixth">
+            <h1 id="heading5">Our Works</h1>
+            <p class="text4">It is a long established fact that a reader will be of a page when established <br> fact looking at its layout.</p>
+            <div id="list1">
+                <ul id="box7">
+                    <li id="block">ALL</li>
+                    <li id="block">SEO</li>
+                    <li id="block">WEBDESIGN</li>
+                    <li id="block">WORK</li>
+                    <li id="block">WORDPRESS</li>
+                </ul>
+            </div>
+               <div id="box8">
+                <img class="adjust" src="./kerri/1.jpg" alt="">
+                <div class="div_overlay">
+                    <div class="contentDiv">
+                        <p class="text9">category</p>
+                        <h3 class="text10">Project Title</h3>
+                    </div>
+                </div>
+            </div> 
+               <div id="box9">
+                <img class="adjust" src="./kerri/2.jpg" alt="">
+                <div class="div_overlay">
+                    <div class="contentDiv">
+                        <p class="text9">category</p>
+                        <h3 class="text10">Project Title</h3>
+                    </div>
+                </div>
+               </div>
+               <div id="box9">
+                <img class="adjust" src="./kerri/3.jpg" alt="">
+                <div class="div_overlay">
+                    <div class="contentDiv">
+                        <p class="text9">category</p>
+                        <h3 class="text10">Project Title</h3>
+                    </div>
+                </div>
+               </div>
+               <div id="box8">
+                <img class="adjust" src="./kerri/4.jpg" alt="">
+                <div class="div_overlay">
+                    <div class="contentDiv">
+                        <p class="text9">category</p>
+                        <h3 class="text10">Project Title</h3>
+                    </div>
+                </div>
+               </div>
+               <div id="box9">
+                <img class="adjust" src="./kerri/5.jpg" alt="">
+                <div class="div_overlay">
+                    <div class="contentDiv">
+                        <p class="text9">category</p>
+                        <h3 class="text10">Project Title</h3>
+                    </div>
+                </div>
+               </div>
+               <div id="box9">
+                <img class="adjust" src="./kerri/6.jpg" alt="">
+                <div class="div_overlay">
+                    <div class="contentDiv">
+                        <p class="text9">category</p>
+                        <h3 class="text10">Project Title</h3>
+                    </div>
+                </div>
+               </div>
+
+        </section>
+        <section id="seventh">
+            <h1 id="heading5">Our Blog</h1>
+            <p class="text4">It is a long established fact that a reader will be of a page when established <br> fact looking at its layout.</p>
+            <div id="block1">
+                <img class="image4" src="./kerri/blog-1.jpg" alt="">
+                <h2 id="heading7">There are many variations</h2>
+                <h3 class="text5">11 March 2018 <span id="color1">By Kerri</span></h3>
+            <p class="text5">Sit sagittis vulputate laoreet sodales tortor <br> nulla lobortis bibendum netus primis <br> fames. Lobortis ultricies.</p>
+            <h3 class="text6">Read More...</h3>    
+        </div>
+            <div id="block1">
+                <img class="image4" src="./kerri/blog-2.jpg" alt="">
+                <h2 id="heading7">Contrary to popular belief</h2>
+                <h3 class="text5">18 March 2018 <span id="color1">By Kerri</span></h3>
+            <p class="text5">Sit sagittis vulputate laoreet sodales tortor <br> nulla lobortis bibendum netus primis <br> fames. Lobortis ultricies.</p>
+            <h3 class="text6">Read More...</h3> 
+            </div>
+            <div id="block1">
+                <img class="image4" src="./kerri/blog-3.jpg" alt="">
+                <h2 id="heading7">Lorem Ipsum is not simply</h2>
+                <h3 class="text5">22 March 2018 <span id="color1">By Kerri</span></h3>
+            <p class="text5">Sit sagittis vulputate laoreet sodales tortor <br> nulla lobortis bibendum netus primis <br> fames. Lobortis ultricies.</p>
+            <h3 class="text6">Read More...</h3> 
+            </div>
+
+
+        </section>
+        <section id="eighth">
+            <h1 id="heading5">Contact Us</h1>
+            <p class="text4">It is a long established fact that a reader will be of a page when established <br> fact looking at its layout.</p>
+<div id="box12">
+    <i class="fa-solid fa-mobile clr"></i>
+    <h2 class="heading8">Call Us On</h2>
+    <p id="text7">+985 123 7856</p>
+</div>
+<div id="box12">
+    <i class="fa-regular fa-envelope clr"></i>
+    <h2 class="heading8">Email Us At</h2>
+    <p id="text7">Website.Kerri@gmail.com</p>
+</div>
+<div id="box12">
+    <i class="bi bi-geo-alt clr"></i>
+    <h2 class="heading8">Visit Office</h2>
+    <p id="text7">202, Grasselli Street , Conway.</p>
+</div>
+<div id="box10">
+<input id="block2" type="text" placeholder="Your name...">
+<input id="block2" type="text" placeholder="Your name...">
+
+
+</div>
+<input id="block3" type="text" placeholder="Your Subject...">
+<textarea id="block4" cols="30" rows="10" placeholder="Your Message..."></textarea>
+<button id="box11">SEND MESSAGE</button>
+            
+        </section>
+        <section id="nineth">
+            <div id="box13">
+                <div id="circle3" >
+                    <i class="fa-brands fa-facebook-f icons1"></i>
+                </div>
+                <div id="circle3" >
+                    <i class="fa-brands fa-linkedin-in icons1"></i>
+                    
+                </div>
+                <div id="circle3" >
+                    <i class="fa-brands fa-pinterest-p icons1"></i>
+                </div>
+                <div id="circle3" >
+                    <i class="bi bi-twitter icons1"></i>
+                </div>
+
+            </div>
+            <p id="text8">2018 - 2021 © Kerri. Design by SRBThemes.</p>
+        </section>
+    </body>
+</html>
